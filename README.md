@@ -34,14 +34,14 @@ Instalando eslint and eslint-config-airbnb
 -   Instale o eslint (Você pode instalar global ou localmente)
 
     yarn add eslint -D
-    
 
--   Instale o eslint-config-airbnb, que por sua vez precisa de algumas dependências: 
+
+-   Instale o eslint-config-airbnb, que por sua vez precisa de algumas dependências:
 
 yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D
 
 -   Crie um arquivo chamado .eslintrc.js e coloque o seguinte conteúdo:
-- 
+-
 
 	module.exports  = {
 		env: {
