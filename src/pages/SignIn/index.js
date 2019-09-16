@@ -4,6 +4,8 @@ import {View, Text} from 'react-native';
 // import { Container } from './styles';
 import Background from '~components/Background';
 import Input from '~/components/Input';
+import Button from '~/components/Button';
+
 export default function SignIn() {
   return (
     <Background>
@@ -12,6 +14,8 @@ export default function SignIn() {
         icon="call"
         placeholder="Digite seu nome"
       />
+
+      <Button>Entrar</Button>
     </Background>
   );
 }
