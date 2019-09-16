@@ -64,3 +64,47 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 -   Atualize o arquivo .eslintrc.js com os seguintes comandos:
 
 [Eslint](https://github.com/quixote15/GoStack-GoBarber-ReactNative/blob/master/.eslintrc.js)
+
+
+### 3.1 Configurando root url imports
+
+instale os seguinte plugins:
+
+    yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D
+
+Depois no arquivo babel.config adicione os seguintes comandos:
+
+  module.exports = {
+    presets: ['module:metro-react-native-babel-preset'],
+    pluggins: [
+      [
+        'babel-plugin-root-import',
+        {
+          rootPathSuffix: 'src',
+        },
+      ],
+    ],
+  };
+
+Uma vez configurado o babel, é preciso configurar esse plugin no eslint.js:
+
+  settings: {
+      'import/resolver': {
+        'babel-plugin-root-import': {
+          rootPathSuffix: 'src',
+        },
+      },
+    },
+
+
+Por fim, para que o vscode não se perca nas importações e gotoDefinitions
+crie um arquivo de configurações chamado jsconfig.json:
+
+  {
+    "compilerOptions": {
+      "baseUrl": "src",
+      "paths":{
+        "~/*": ["*"]
+      }
+    }
+  }
