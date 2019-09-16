@@ -1,6 +1,6 @@
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
-  pluggins: [
+  plugins: [
     [
       'babel-plugin-root-import',
       {
