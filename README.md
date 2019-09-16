@@ -63,4 +63,4 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
 -   Atualize o arquivo .eslintrc.js com os seguintes comandos:
 
-!(Eslint)[https://github.com/quixote15/GoStack-GoBarber-ReactNative/blob/master/.eslintrc.js]
+[Eslint](https://github.com/quixote15/GoStack-GoBarber-ReactNative/blob/master/.eslintrc.js)
