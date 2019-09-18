@@ -56,6 +56,7 @@ export default (isSigned = false) =>
           },
           {
             tabBarOptions: {
+              resetOnBlur: true,
               keyboardHidesTabBar: true,
               activeTintColor: '#FFF',
               inactiveTintColor: 'rgba(255,255,255,0.6)',
